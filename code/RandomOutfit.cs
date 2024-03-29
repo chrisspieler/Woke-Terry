@@ -12,6 +12,10 @@ public sealed partial class RandomOutfit : Component
 		public Color HairColor { get; set; }
 		public bool HasPlumpLips { get; set; }
 		public bool HasEyebrows { get; set; }
+		public bool ShouldWearShirt { get; set; }
+		public bool ShouldWearJacket { get; set; }
+		public bool ShouldWearBottom { get; set; }
+		public bool ShouldWearFootwear { get; set; }
 	}
 
 	[Property] public SkinnedModelRenderer Citizen { get; set; }
@@ -23,6 +27,10 @@ public sealed partial class RandomOutfit : Component
 	[Property, Range( 0, 100 )] public float FacialOrnamentPercent { get; set; } = 50f;
 	[Property, Range( 0, 100 )] public float PlumpLipsPercent { get; set; } = 50f;
 	[Property, Range( 0, 100 )] public float EyebrowsPercent { get; set; } = 90f;
+	[Property, Range( 0, 100 )] public float ShirtPercent { get; set; } = 95f;
+	[Property, Range( 0, 100 )] public float JacketPercent { get; set; } = 20f;
+	[Property, Range( 0, 100 )] public float BottomPercent { get; set; } = 100f;
+	[Property, Range( 0, 100 )] public float FootwearPercent { get; set; } = 80f;
 
 	protected override void OnStart()
 	{
@@ -45,12 +53,16 @@ public sealed partial class RandomOutfit : Component
 
 		var config = GetConfiguration();
 		var container = new ClothingContainer();
-		container.Add( GetSkin( config ) );
-		container.Add( GetRandomHair( config ) );
-		container.Add( GetRandomFacialHair( config ) );
-		container.Add( GetRandomLips( config ) );
-		container.Add( GetRandomEyebrows( config ) );
-		container.Add( GetRandomFacialOrnament( config ) );
+		container.Add( GetSkin( config ), ClothingConflictResolver.DoNothing );
+		container.Add( GetRandomHair( config ), ClothingConflictResolver.DoNothing );
+		container.Add( GetRandomFacialHair( config ), ClothingConflictResolver.DoNothing );
+		container.Add( GetRandomLips( config ), ClothingConflictResolver.DoNothing );
+		container.Add( GetRandomEyebrows( config ), ClothingConflictResolver.DoNothing );
+		container.Add( GetRandomFacialOrnament( config ), ClothingConflictResolver.DoNothing );
+		container.Add( GetRandomShirt( config ), ClothingConflictResolver.DoNothing );
+		container.Add( GetRandomJacket( config ), ClothingConflictResolver.RemoveSelf );
+		container.Add( GetRandomBottoms( config ), ClothingConflictResolver.DoNothing );
+		container.Add( GetRandomFootwear( config ), ClothingConflictResolver.DoNothing );
 		container.Apply( citizen );
 		DyeHair( citizen, container, config );
 	}
@@ -66,6 +78,10 @@ public sealed partial class RandomOutfit : Component
 			HasPlumpLips	= PlumpLipsPercent >= Game.Random.Float( 0, 100 ),
 			IsHeadShaved	= CueballPercent >= Game.Random.Float( 0, 100 ),
 			HasFacialHair	= FacialHairPercent >= Game.Random.Float( 0, 100 ),
+			ShouldWearShirt = ShirtPercent >= Game.Random.Float( 0, 100 ),
+			ShouldWearJacket = JacketPercent >= Game.Random.Float( 0, 100 ),
+			ShouldWearBottom = BottomPercent >= Game.Random.Float( 0, 100 ),
+			ShouldWearFootwear = FootwearPercent >= Game.Random.Float( 0, 100 ),
 		};
 		ConfigureHairColor( config );
 		return config;

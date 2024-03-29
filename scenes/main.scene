@@ -31,6 +31,7 @@
     {
       "__guid": "8628b5ad-c70b-44a0-a17f-a02b91ad1d66",
       "Name": "Terry",
+      "Position": "78.40492,0.000006854377,0",
       "Rotation": "0,0,1,-0.00000004371139",
       "Enabled": true,
       "NetworkMode": 2,
@@ -48,6 +49,7 @@
         {
           "__type": "RandomOutfit",
           "__guid": "eb0c56d4-6659-4250-a6df-c823f9bb068f",
+          "BottomPercent": 100,
           "Citizen": {
             "_type": "component",
             "component_id": "c9c36ccf-4b06-4abb-b5f6-821724be3eb8",
@@ -60,8 +62,11 @@
           "EyebrowsPercent": 90,
           "FacialHairPercent": 15,
           "FacialOrnamentPercent": 50,
+          "FootwearPercent": 80,
           "HairDyePercent": 100,
-          "PlumpLipsPercent": 50
+          "JacketPercent": 20,
+          "PlumpLipsPercent": 50,
+          "ShirtPercent": 95
         }
       ]
     },
@@ -668,7 +673,7 @@
   },
   "Title": "main",
   "Description": "",
-  "LastSaved": "2024-03-29T00:01:53.4401798-06:00",
+  "LastSaved": "2024-03-29T00:11:56.4600025-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
