@@ -14,7 +14,7 @@
           "__guid": "cb255211-7137-4c36-b842-97f88e489a46",
           "BackgroundColor": "0.33333,0.46275,0.52157,1",
           "ClearFlags": "All",
-          "FieldOfView": 60,
+          "FieldOfView": 40,
           "IsMainCamera": true,
           "Orthographic": false,
           "OrthographicHeight": 1204,
@@ -25,6 +25,71 @@
           "Viewport": "0,0,1,1",
           "ZFar": 10000,
           "ZNear": 10
+        },
+        {
+          "__type": "Bloom",
+          "__guid": "75d5adb4-d02f-4e1a-8f07-a99dc74a6b4b",
+          "BloomColor": {
+            "color": [
+              {
+                "c": "1,1,1,1"
+              },
+              {
+                "t": 1,
+                "c": "1,1,1,1"
+              }
+            ]
+          },
+          "BloomCurve": [
+            {
+              "y": 0.5
+            },
+            {
+              "x": 1,
+              "y": 1
+            }
+          ],
+          "Mode": "Additive",
+          "Strength": 1,
+          "Threshold": 0.5,
+          "ThresholdWidth": 0
+        },
+        {
+          "__type": "Sharpen",
+          "__guid": "5cb2e3ba-7abb-4b56-8a7b-9b99de4d2c1d",
+          "Scale": 0.1
+        },
+        {
+          "__type": "ColorAdjustments",
+          "__guid": "6b7f089a-057e-4400-8790-6f49981ca2e3",
+          "Brightness": 1,
+          "Contrast": 1.01,
+          "HueRotate": 0,
+          "Saturation": 1.1
+        },
+        {
+          "__type": "Vignette",
+          "__guid": "8da8e67e-29a6-491b-8dad-4bdfc547d1ae",
+          "Center": "0.5,0.5",
+          "Color": "0,0,0,1",
+          "Intensity": 0.19,
+          "Roundness": 1,
+          "Smoothness": 1
+        },
+        {
+          "__type": "CameraWobble",
+          "__guid": "487a884c-a8f8-4800-8180-98149e02fa2f",
+          "FovRange": "70.00,90.00,1",
+          "OrbitDistance": 50,
+          "OrbitSwayAmount": "30,20,0",
+          "OrbitSwaySpeed": 0.5,
+          "OrbitTarget": {
+            "_type": "gameobject",
+            "go": "09c74406-9245-4810-a98c-726f5dc06709"
+          },
+          "SwayAmount": "20,20,20",
+          "SwaySpeed": 20,
+          "ZoomSpeed": 1
         }
       ]
     },
@@ -67,6 +132,20 @@
           "JacketPercent": 20,
           "PlumpLipsPercent": 50,
           "ShirtPercent": 95
+        },
+        {
+          "__type": "TerryCycler",
+          "__guid": "a569f178-8c01-4962-8926-f599dbbbadff",
+          "CycleIntervalSeconds": 1
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "09c74406-9245-4810-a98c-726f5dc06709",
+          "Name": "Camera Target",
+          "Position": "0,0,64",
+          "Enabled": true,
+          "NetworkMode": 2
         }
       ]
     },
@@ -590,7 +669,7 @@
     {
       "__guid": "34308f45-00e6-4e74-a20c-bbed65885cc9",
       "Name": "Point Light",
-      "Position": "-0.3675385,73.72276,72.50934",
+      "Position": "48.77128,28.94585,72.50934",
       "Tags": "light_point,light",
       "Enabled": true,
       "NetworkMode": 2,
@@ -673,7 +752,7 @@
   },
   "Title": "main",
   "Description": "",
-  "LastSaved": "2024-03-29T00:11:56.4600025-06:00",
+  "LastSaved": "2024-03-29T02:09:08.2312121-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
