@@ -1,0 +1,24 @@
+{
+  "Name": "Beige",
+  "YoungSkin": "models/citizen_clothes/skin01.clothing",
+  "ElderSkin": "models/citizen_clothes/skin06.clothing",
+  "NaturalHairColor": {
+    "color": [
+      {
+        "c": "1,1,1,1"
+      },
+      {
+        "t": 0.48076922,
+        "c": "0.45581,0.32349,0.22897,1"
+      },
+      {
+        "t": 1,
+        "c": "0,0,0,1"
+      }
+    ],
+    "alpha": []
+  },
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

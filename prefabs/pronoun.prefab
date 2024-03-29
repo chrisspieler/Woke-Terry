@@ -1,0 +1,78 @@
+{
+  "RootObject": {
+    "__guid": "d4fb2e5e-52df-4d2d-8363-56ff2455cd78",
+    "Name": "pronoun",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "RandomPronoun",
+        "__guid": "1e863d04-f7c9-4986-99a2-49828b57f540",
+        "Alpha": [
+          {},
+          {
+            "x": 0.16947116,
+            "y": 1
+          },
+          {
+            "x": 0.66466343,
+            "y": 1
+          },
+          {
+            "x": 0.8557692
+          }
+        ],
+        "Lifetime": 5,
+        "SpeedFactor": [
+          {
+            "x": 0.008928572
+          },
+          {
+            "x": 0.26636904,
+            "y": 0.11982727,
+            "in": -1.1862131,
+            "out": 1.1862131
+          },
+          {
+            "x": 0.57589287,
+            "y": 1,
+            "in": 0.041666813,
+            "out": -0.041666813
+          }
+        ],
+        "Text": {
+          "_type": "component",
+          "component_id": "13f0fac3-f297-45aa-8759-173e1a890447",
+          "go": "07ebd8c6-ef01-4ced-aaa7-7bf90606f194",
+          "component_type": "TextRenderer"
+        },
+        "TranslationPerSecond": "-250,0,0"
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "07ebd8c6-ef01-4ced-aaa7-7bf90606f194",
+        "Name": "Text",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Components": [
+          {
+            "__type": "TextRenderer",
+            "__guid": "13f0fac3-f297-45aa-8759-173e1a890447",
+            "Color": "1,1,1,1",
+            "FontFamily": "Times New Roman",
+            "FontSize": 128,
+            "Scale": 0.1,
+            "Text": ""
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}
