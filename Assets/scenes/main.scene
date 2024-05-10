@@ -3,14 +3,16 @@
   "GameObjects": [
     {
       "__guid": "e6dd0a41-8e7c-4621-819d-d23f6cef52f4",
+      "Flags": 0,
       "Name": "Main Camera",
       "Position": "-83.0332,-1.551621,65.48743",
       "Rotation": "-0.0005806512,0.03838357,0.01511472,0.9991486",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
-          "__type": "CameraComponent",
+          "__type": "Sandbox.CameraComponent",
           "__guid": "cb255211-7137-4c36-b842-97f88e489a46",
           "BackgroundColor": "0.33333,0.46275,0.52157,1",
           "ClearFlags": "All",
@@ -27,7 +29,7 @@
           "ZNear": 10
         },
         {
-          "__type": "Bloom",
+          "__type": "Sandbox.Bloom",
           "__guid": "75d5adb4-d02f-4e1a-8f07-a99dc74a6b4b",
           "BloomColor": {
             "color": [
@@ -56,12 +58,12 @@
           "ThresholdWidth": 0
         },
         {
-          "__type": "Sharpen",
+          "__type": "Sandbox.Sharpen",
           "__guid": "5cb2e3ba-7abb-4b56-8a7b-9b99de4d2c1d",
           "Scale": 0.1
         },
         {
-          "__type": "ColorAdjustments",
+          "__type": "Sandbox.ColorAdjustments",
           "__guid": "6b7f089a-057e-4400-8790-6f49981ca2e3",
           "Brightness": 1,
           "Contrast": 1.01,
@@ -69,7 +71,7 @@
           "Saturation": 1.1
         },
         {
-          "__type": "Vignette",
+          "__type": "Sandbox.Vignette",
           "__guid": "8da8e67e-29a6-491b-8dad-4bdfc547d1ae",
           "Center": "0.5,0.5",
           "Color": "0,0,0,1",
@@ -96,14 +98,16 @@
     },
     {
       "__guid": "8628b5ad-c70b-44a0-a17f-a02b91ad1d66",
+      "Flags": 0,
       "Name": "Terry",
       "Position": "78.40492,0.000006854377,0",
       "Rotation": "0,0,1,-0.00000004371139",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
-          "__type": "SkinnedModelRenderer",
+          "__type": "Sandbox.SkinnedModelRenderer",
           "__guid": "c9c36ccf-4b06-4abb-b5f6-821724be3eb8",
           "BodyGroups": 341,
           "CreateBoneObjects": false,
@@ -127,11 +131,11 @@
           "ElderPercent": 17,
           "EyebrowsPercent": 90,
           "FacialHairPercent": 15,
-          "FacialOrnamentPercent": 50,
+          "FacialOrnamentPercent": 10,
           "FootwearPercent": 80,
-          "HairDyePercent": 100,
+          "HairDyePercent": 5,
           "JacketPercent": 20,
-          "PlumpLipsPercent": 50,
+          "PlumpLipsPercent": 20,
           "ShirtPercent": 95
         },
         {
@@ -143,21 +147,25 @@
       "Children": [
         {
           "__guid": "09c74406-9245-4810-a98c-726f5dc06709",
+          "Flags": 0,
           "Name": "Camera Target",
           "Position": "0,0,64",
           "Enabled": true,
-          "NetworkMode": 2
+          "NetworkMode": 2,
+          "NetworkInterpolation": true
         }
       ]
     },
     {
       "__guid": "5c62565b-2f16-4f7e-a732-ab1696d2b180",
+      "Flags": 0,
       "Name": "Volumetric Fog",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
-          "__type": "VolumetricFogVolume",
+          "__type": "Sandbox.VolumetricFogVolume",
           "__guid": "0de028b0-ecd3-4e54-b47d-e8d10443dba5",
           "Bounds": {
             "Mins": "-1000,-1000,-1000",
@@ -170,14 +178,16 @@
     },
     {
       "__guid": "0b9cb636-54f1-4e6d-a95a-c98c3650b8f9",
+      "Flags": 0,
       "Name": "Smoke",
       "Position": "295.193,20.50562,-46.13969",
       "Tags": "particles",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
-          "__type": "ParticleEffect",
+          "__type": "Sandbox.ParticleEffect",
           "__guid": "d43bc54a-2c07-4117-9224-b0f4cd831370",
           "Alpha": {
             "Type": "Curve",
@@ -289,7 +299,7 @@
           "Tint": "0.98605,0.98605,0.98605,0.15"
         },
         {
-          "__type": "ParticleSpriteRenderer",
+          "__type": "Sandbox.ParticleSpriteRenderer",
           "__guid": "ffb7e921-9514-4d5f-8f0b-3062898bfb36",
           "Additive": true,
           "BlurAmount": 0.5,
@@ -308,7 +318,7 @@
           "Texture": "materials/particles/smoke/render/smokeloop_g_1.vtex"
         },
         {
-          "__type": "ParticleBoxEmitter",
+          "__type": "Sandbox.ParticleBoxEmitter",
           "__guid": "1a127dbe-607e-4b31-8fe3-80b135911a3c",
           "Burst": 0,
           "Delay": 0,
@@ -323,14 +333,16 @@
     },
     {
       "__guid": "a4dd1c92-dabd-4639-8abd-10bcf55e69a6",
+      "Flags": 0,
       "Name": "Smoke (2)",
       "Position": "-9.020874,20.50562,-89.35944",
       "Tags": "particles",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
-          "__type": "ParticleEffect",
+          "__type": "Sandbox.ParticleEffect",
           "__guid": "701a4696-a80a-46fb-a0d9-fa4354e2cd94",
           "Alpha": {
             "Type": "Curve",
@@ -442,7 +454,7 @@
           "Tint": "0.98605,0.98605,0.98605,0.15"
         },
         {
-          "__type": "ParticleSpriteRenderer",
+          "__type": "Sandbox.ParticleSpriteRenderer",
           "__guid": "6093785c-d08d-4021-a1a8-f45acbf17bfb",
           "Additive": true,
           "BlurAmount": 0.5,
@@ -461,7 +473,7 @@
           "Texture": "materials/particles/smoke/render/smokeloop_g_1.vtex"
         },
         {
-          "__type": "ParticleBoxEmitter",
+          "__type": "Sandbox.ParticleBoxEmitter",
           "__guid": "09312426-2c88-4006-ac2a-07c2f2904f1b",
           "Burst": 0,
           "Delay": 0,
@@ -476,14 +488,16 @@
     },
     {
       "__guid": "1d253515-e852-42bd-83c7-08498c3c805f",
+      "Flags": 0,
       "Name": "Smoke (1)",
       "Position": "504.0588,20.50562,101.3104",
       "Tags": "particles",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
-          "__type": "ParticleEffect",
+          "__type": "Sandbox.ParticleEffect",
           "__guid": "ffb03004-9a70-4395-9aa5-3cfbfd02dd57",
           "Alpha": {
             "Type": "Curve",
@@ -595,7 +609,7 @@
           "Tint": "0.98605,0.98605,0.98605,0.15"
         },
         {
-          "__type": "ParticleSpriteRenderer",
+          "__type": "Sandbox.ParticleSpriteRenderer",
           "__guid": "0a738a9a-aed8-4bad-91f6-c821033ba8e2",
           "Additive": false,
           "BlurAmount": 0.5,
@@ -614,7 +628,7 @@
           "Texture": "materials/particles/smoke/render/smokeloop_g_1.vtex"
         },
         {
-          "__type": "ParticleBoxEmitter",
+          "__type": "Sandbox.ParticleBoxEmitter",
           "__guid": "b8984c60-3b5c-475a-bf6f-b6a342686a91",
           "Burst": 0,
           "Delay": 0,
@@ -629,13 +643,15 @@
     },
     {
       "__guid": "14a0ce94-96a5-4cee-9349-7c52e8d9420e",
+      "Flags": 0,
       "Name": "2D Skybox",
       "Tags": "skybox",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
-          "__type": "SkyBox2D",
+          "__type": "Sandbox.SkyBox2D",
           "__guid": "23bbef53-eebb-4fef-bf9c-22cbf4452aba",
           "SkyMaterial": "starmap20.vmat",
           "Tint": "0.07907,0.07907,0.07907,1"
@@ -649,14 +665,16 @@
     },
     {
       "__guid": "fd11a0fb-5597-4d2c-a24a-2d945cad521b",
+      "Flags": 0,
       "Name": "Point Light (2)",
       "Position": "-93.14645,-2.240189,117.8556",
       "Tags": "light_point,light",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
-          "__type": "PointLight",
+          "__type": "Sandbox.PointLight",
           "__guid": "cd55103e-4221-4ad8-bb24-418c0d44ed55",
           "Attenuation": 1.35,
           "FogMode": "Enabled",
@@ -669,14 +687,16 @@
     },
     {
       "__guid": "34308f45-00e6-4e74-a20c-bbed65885cc9",
+      "Flags": 0,
       "Name": "Point Light",
       "Position": "48.77128,28.94585,72.50934",
       "Tags": "light_point,light",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
-          "__type": "PointLight",
+          "__type": "Sandbox.PointLight",
           "__guid": "b4575b9d-dea6-47ea-ab64-8fd1fae0efc3",
           "Attenuation": 1,
           "FogMode": "Enabled",
@@ -689,14 +709,16 @@
     },
     {
       "__guid": "85b45c83-4690-47bd-be7e-06a9ddfe2165",
+      "Flags": 0,
       "Name": "Point Light (1)",
       "Position": "78.54644,-160.5957,57.72089",
       "Tags": "light_point,light",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
-          "__type": "PointLight",
+          "__type": "Sandbox.PointLight",
           "__guid": "efd06c45-6648-4461-9549-35d9f4b61e90",
           "Attenuation": 1,
           "FogMode": "Enabled",
@@ -709,10 +731,12 @@
     },
     {
       "__guid": "b2116860-99e4-402b-9bc4-7d6d16a22b64",
+      "Flags": 0,
       "Name": "Pronouns",
       "Position": "287.9223,-18.6924,38.62001",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "PronounEmitter",
@@ -732,9 +756,9 @@
   ],
   "SceneProperties": {
     "FixedUpdateFrequency": 50,
-    "Lerping": true,
     "MaxFixedUpdates": 5,
     "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
     "ThreadedAnimation": true,
     "TimeScale": 1,
     "UseFixedUpdate": true,
@@ -753,7 +777,7 @@
   },
   "Title": "main",
   "Description": "",
-  "LastSaved": "2024-03-29T02:12:21.3752471-06:00",
+  "LastSaved": "2024-05-10T08:57:15.2144096-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

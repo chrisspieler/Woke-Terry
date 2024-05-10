@@ -1,0 +1,22 @@
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\CoverletSourceRootsMapping_terryrandomizer.unittest
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\testhost.dll
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\testhost.exe
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\terryrandomizer.unittest.xml
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\terryrandomizer.unittest.deps.json
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\terryrandomizer.unittest.runtimeconfig.json
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\terryrandomizer.unittest.dll
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\terryrandomizer.unittest.pdb
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\UnitTests\obj\Debug\terryrandomizer.unittest.csproj.AssemblyReference.cache
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\UnitTests\obj\Debug\terryrandomizer.unittest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\UnitTests\obj\Debug\terryrandomizer.unittest.AssemblyInfoInputs.cache
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\UnitTests\obj\Debug\terryrandomizer.unittest.AssemblyInfo.cs
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\UnitTests\obj\Debug\terryrandomizer.unittest.csproj.CoreCompileInputs.cache
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\UnitTests\obj\Debug\terryrandomizer.unittest.csproj.CopyComplete
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\UnitTests\obj\Debug\terryrandomizer.unittest.dll
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\UnitTests\obj\Debug\refint\terryrandomizer.unittest.dll
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\UnitTests\obj\Debug\terryrandomizer.unittest.pdb
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\UnitTests\obj\Debug\terryrandomizer.unittest.genruntimeconfig.cache
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\UnitTests\obj\Debug\ref\terryrandomizer.unittest.dll

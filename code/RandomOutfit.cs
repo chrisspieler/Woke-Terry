@@ -98,10 +98,15 @@ public sealed partial class RandomOutfit : Component
 	{
 		var gradientProgress = Game.Random.Float();
 		// Shift elder hair towards the gray.
-		if ( config.IsElder )
+		if ( config.IsElder && Game.Random.Float() < 0.5f )
 		{
-			gradientProgress -= 0.7f;
+			gradientProgress -= 0.5f;
 			gradientProgress = MathF.Max( 0f, gradientProgress );
+		}
+		else
+		{
+			gradientProgress += 0.25f;
+			gradientProgress = MathF.Min( 1f, gradientProgress );
 		}
 		return config.Skin.NaturalHairColor.Evaluate( gradientProgress );
 	}
@@ -110,8 +115,8 @@ public sealed partial class RandomOutfit : Component
 	{
 		return new ColorHsv()
 			.WithHue( Game.Random.Float( 0, 360 ) )
-			.WithSaturation( Game.Random.Float( 0.5f, 1f ) )
-			.WithValue( Game.Random.Float( 0.3f, 1f ) )
+			.WithSaturation( Game.Random.Float( 0.1f, 0.6f ) )
+			.WithValue( Game.Random.Float( 1f ) )
 			.WithAlpha( 1f );
 	}
 }

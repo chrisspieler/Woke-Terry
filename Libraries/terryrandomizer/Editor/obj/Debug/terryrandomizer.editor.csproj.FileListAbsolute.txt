@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\terryrandomizer.editor.xml
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\terryrandomizer.editor.deps.json
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\terryrandomizer.editor.dll
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\terryrandomizer.editor.pdb
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\Editor\obj\Debug\terryrandomizer.editor.csproj.AssemblyReference.cache
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\Editor\obj\Debug\terryrandomizer.editor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\Editor\obj\Debug\terryrandomizer.editor.AssemblyInfoInputs.cache
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\Editor\obj\Debug\terryrandomizer.editor.AssemblyInfo.cs
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\Editor\obj\Debug\terryrandomizer.editor.csproj.CoreCompileInputs.cache
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\Editor\obj\Debug\terryrandomizer.editor.csproj.CopyComplete
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\Editor\obj\Debug\terryrandomizer.editor.dll
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\Editor\obj\Debug\refint\terryrandomizer.editor.dll
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\Editor\obj\Debug\terryrandomizer.editor.pdb
+C:\Users\Chris\Documents\s&box projects\woke_terry\Libraries\terryrandomizer\Editor\obj\Debug\ref\terryrandomizer.editor.dll
