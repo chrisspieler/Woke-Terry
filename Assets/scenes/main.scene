@@ -117,31 +117,17 @@
           "Tint": "1,1,1,1"
         },
         {
-          "__type": "RandomOutfit",
-          "__guid": "eb0c56d4-6659-4250-a6df-c823f9bb068f",
-          "BottomPercent": 100,
-          "Citizen": {
+          "__type": "TerryCycler",
+          "__guid": "a569f178-8c01-4962-8926-f599dbbbadff",
+          "BodyConfig": "body/default.bodcfg",
+          "CycleIntervalSeconds": 1,
+          "OutfitConfig": "outfit/default.clthcfg",
+          "Target": {
             "_type": "component",
             "component_id": "c9c36ccf-4b06-4abb-b5f6-821724be3eb8",
             "go": "8628b5ad-c70b-44a0-a17f-a02b91ad1d66",
             "component_type": "SkinnedModelRenderer"
-          },
-          "CueballPercent": 4.5,
-          "DressOnStart": true,
-          "ElderPercent": 17,
-          "EyebrowsPercent": 90,
-          "FacialHairPercent": 15,
-          "FacialOrnamentPercent": 10,
-          "FootwearPercent": 80,
-          "HairDyePercent": 5,
-          "JacketPercent": 20,
-          "PlumpLipsPercent": 20,
-          "ShirtPercent": 95
-        },
-        {
-          "__type": "TerryCycler",
-          "__guid": "a569f178-8c01-4962-8926-f599dbbbadff",
-          "CycleIntervalSeconds": 1
+          }
         }
       ],
       "Children": [
@@ -777,7 +763,7 @@
   },
   "Title": "main",
   "Description": "",
-  "LastSaved": "2024-05-10T08:57:15.2144096-06:00",
+  "LastSaved": "2024-05-11T07:11:59.1566462-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

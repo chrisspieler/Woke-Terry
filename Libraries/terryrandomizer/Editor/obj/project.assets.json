@@ -22,17 +22,17 @@
           "bin/placeholder/Base Library.dll": {}
         }
       },
-      "terryrandomizer/1.0.0": {
+      "terry_randomizer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Base Library": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/terryrandomizer.dll": {}
+          "bin/placeholder/terry_randomizer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/terryrandomizer.dll": {}
+          "bin/placeholder/terry_randomizer.dll": {}
         }
       }
     }
@@ -48,16 +48,16 @@
       "path": "../../../../../../../../Program Files (x86)/Steam/steamapps/common/sbox/addons/base/Code/Base Library.csproj",
       "msbuildProject": "../../../../../../../../Program Files (x86)/Steam/steamapps/common/sbox/addons/base/Code/Base Library.csproj"
     },
-    "terryrandomizer/1.0.0": {
+    "terry_randomizer/1.0.0": {
       "type": "project",
-      "path": "../Code/terryrandomizer.csproj",
-      "msbuildProject": "../Code/terryrandomizer.csproj"
+      "path": "../Code/terry_randomizer.csproj",
+      "msbuildProject": "../Code/terry_randomizer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Base Editor Library >= 1.0.0",
-      "terryrandomizer >= 1.0.0"
+      "terry_randomizer >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -69,9 +69,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chris\\Documents\\s&box projects\\woke_terry\\Libraries\\terryrandomizer\\Editor\\terryrandomizer.editor.csproj",
-      "projectName": "terryrandomizer.editor",
-      "projectPath": "C:\\Users\\Chris\\Documents\\s&box projects\\woke_terry\\Libraries\\terryrandomizer\\Editor\\terryrandomizer.editor.csproj",
+      "projectUniqueName": "C:\\Users\\Chris\\Documents\\s&box projects\\woke_terry\\Libraries\\terryrandomizer\\Editor\\terry_randomizer.editor.csproj",
+      "projectName": "terry_randomizer.editor",
+      "projectPath": "C:\\Users\\Chris\\Documents\\s&box projects\\woke_terry\\Libraries\\terryrandomizer\\Editor\\terry_randomizer.editor.csproj",
       "packagesPath": "C:\\Users\\Chris\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Chris\\Documents\\s&box projects\\woke_terry\\Libraries\\terryrandomizer\\Editor\\obj\\",
       "projectStyle": "PackageReference",
@@ -101,8 +101,8 @@
             "C:\\Program Files (x86)\\Steam\\steamapps\\common\\sbox\\addons\\tools\\Code\\Base Editor Library.csproj": {
               "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\sbox\\addons\\tools\\Code\\Base Editor Library.csproj"
             },
-            "C:\\Users\\Chris\\Documents\\s&box projects\\woke_terry\\Libraries\\terryrandomizer\\Code\\terryrandomizer.csproj": {
-              "projectPath": "C:\\Users\\Chris\\Documents\\s&box projects\\woke_terry\\Libraries\\terryrandomizer\\Code\\terryrandomizer.csproj"
+            "C:\\Users\\Chris\\Documents\\s&box projects\\woke_terry\\Libraries\\terryrandomizer\\Code\\terry_randomizer.csproj": {
+              "projectPath": "C:\\Users\\Chris\\Documents\\s&box projects\\woke_terry\\Libraries\\terryrandomizer\\Code\\terry_randomizer.csproj"
             }
           }
         }

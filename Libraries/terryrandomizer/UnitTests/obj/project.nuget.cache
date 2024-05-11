@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2imFQDNUr/2qvUd8Ko7Onqm7x3VKnmPzNsrPx3uh2bveiLH6WJigRHbSZb6edAWEw62KtoCaw1+KOq0OaIPu+g==",
+  "dgSpecHash": "bHYbONz0kYoC5oZxTDvf1a35RY7X82r/BUgL5iwu2lRyjbtFvwUHzvTw6g8XfMhvnPuD2ep559t3gTZZvdVvgA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Chris\\Documents\\s&box projects\\woke_terry\\Libraries\\terryrandomizer\\UnitTests\\terryrandomizer.unittest.csproj",
+  "projectFilePath": "C:\\Users\\Chris\\Documents\\s&box projects\\woke_terry\\Libraries\\terryrandomizer\\UnitTests\\terry_randomizer.unittest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Chris\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\Chris\\.nuget\\packages\\microsoft.codecoverage\\17.7.2\\microsoft.codecoverage.17.7.2.nupkg.sha512",

@@ -35,9 +35,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chris\\Documents\\s&box projects\\woke_terry\\Libraries\\terryrandomizer\\Code\\terryrandomizer.csproj",
-      "projectName": "terryrandomizer",
-      "projectPath": "C:\\Users\\Chris\\Documents\\s&box projects\\woke_terry\\Libraries\\terryrandomizer\\Code\\terryrandomizer.csproj",
+      "projectUniqueName": "C:\\Users\\Chris\\Documents\\s&box projects\\woke_terry\\Libraries\\terryrandomizer\\Code\\terry_randomizer.csproj",
+      "projectName": "terry_randomizer",
+      "projectPath": "C:\\Users\\Chris\\Documents\\s&box projects\\woke_terry\\Libraries\\terryrandomizer\\Code\\terry_randomizer.csproj",
       "packagesPath": "C:\\Users\\Chris\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Chris\\Documents\\s&box projects\\woke_terry\\Libraries\\terryrandomizer\\Code\\obj\\",
       "projectStyle": "PackageReference",
