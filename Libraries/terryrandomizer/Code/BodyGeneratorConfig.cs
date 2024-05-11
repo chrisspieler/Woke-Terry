@@ -13,6 +13,7 @@ public class BodyGeneratorConfig : GameResource
 	[Property, Range( 0, 100 )] public float CueballPercent { get; set; } = 4.5f;
 	[Property, Range( 0, 100 )] public float FacialHairPercent { get; set; } = 15f;
 	[Property, Range( 0, 100 )] public float HairDyePercent { get; set; } = 5f;
+	[Property, Range( 0, 1 )] public RangedFloat HairDyeSaturation { get; set; } = 0.6f;
 	[Property, Range( 0, 100 )] public float FacialOrnamentPercent { get; set; } = 10f;
 	[Property, Range( 0, 100 )] public float PlumpLipsPercent { get; set; } = 20f;
 	[Property, Range( 0, 100 )] public float EyebrowsPercent { get; set; } = 90f;

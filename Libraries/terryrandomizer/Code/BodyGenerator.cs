@@ -53,7 +53,7 @@ public class BodyGenerator
 	{
 		return new ColorHsv()
 			.WithHue( Game.Random.Float( 0, 360 ) )
-			.WithSaturation( Game.Random.Float( 0.1f, 0.6f ) )
+			.WithSaturation( _config.HairDyeSaturation.GetValue() )
 			.WithValue( Game.Random.Float( 1f ) )
 			.WithAlpha( 1f );
 	}
