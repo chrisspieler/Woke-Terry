@@ -22,7 +22,8 @@ public class BodyGenerator
 			HasEyebrows = _config.EyebrowsPercent >= Game.Random.Float( 0, 100 ),
 			HasPlumpLips = _config.PlumpLipsPercent >= Game.Random.Float( 0, 100 ),
 			IsHeadShaved = _config.CueballPercent >= Game.Random.Float( 0, 100 ),
-			HasFacialHair = _config.FacialHairPercent >= Game.Random.Float( 0, 100 )
+			HasFacialHair = _config.FacialHairPercent >= Game.Random.Float( 0, 100 ),
+			HasFacialOrnament = _config.FacialOrnamentPercent >= Game.Random.Float( 0, 100 )
 		};
 		data.HairColor = GenerateHairColor( data );
 		data.Resources = GetClothingResources( data );
@@ -118,11 +119,15 @@ public class BodyGenerator
 	private Clothing GetRandomFacialOrnament( BodyData data )
 	{
 		// Beards conflict with the facial ornament, so skip this.
-		if ( data.HasFacialHair )
+		if ( data.HasFacialHair || !data.HasFacialOrnament )
 			return null;
 
 		var options = ResourceLibrary.GetAll<Clothing>()
 			.Where( ClothingCategories.IsFacialOrnament );
+		foreach( var option in options )
+		{
+			Log.Info( option.ResourceName );
+		}
 		return Game.Random.FromList( options.ToList() );
 	}
 }

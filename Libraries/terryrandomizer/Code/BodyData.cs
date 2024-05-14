@@ -12,5 +12,6 @@ public class BodyData
 	public Color HairColor { get; set; }
 	public bool HasPlumpLips { get; set; }
 	public bool HasEyebrows { get; set; }
+	public bool HasFacialOrnament { get; set; }
 	public ClothingContainer Resources { get; set; }
 }
