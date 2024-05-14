@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Duccsoft.Terry;
 
-[GameResource("Body Generator Config", "bodcfg", "Defines")]
+[GameResource("Body Generator Config", "bodcfg", "Defines the parameters of generating the features of an unclothed Terry.", Category = "Terry Randomizer", Icon = "accessibility" )]
 public class BodyGeneratorConfig : GameResource
 {
 	[Property] public HairColorData HairColors { get; set; }

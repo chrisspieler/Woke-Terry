@@ -68,7 +68,7 @@
           "Brightness": 1,
           "Contrast": 1.01,
           "HueRotate": 0,
-          "Saturation": 1.1
+          "Saturation": 1
         },
         {
           "__type": "Sandbox.Vignette",
@@ -121,7 +121,7 @@
           "__guid": "a569f178-8c01-4962-8926-f599dbbbadff",
           "BodyConfig": "data/woke_body.bodcfg",
           "CycleIntervalSeconds": 1,
-          "OutfitConfig": "outfit/default.clthcfg",
+          "OutfitConfig": "data/woke_clothing.clthcfg",
           "Target": {
             "_type": "component",
             "component_id": "c9c36ccf-4b06-4abb-b5f6-821724be3eb8",
@@ -328,7 +328,7 @@
   },
   "Title": "main",
   "Description": "",
-  "LastSaved": "2024-05-11T08:23:53.2683998-06:00",
+  "LastSaved": "2024-05-14T14:03:43.4748434-06:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

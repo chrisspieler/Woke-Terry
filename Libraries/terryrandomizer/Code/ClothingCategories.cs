@@ -1,5 +1,4 @@
 ﻿using Sandbox;
-using System.Linq;
 
 namespace Duccsoft.Terry;
 
@@ -48,9 +47,6 @@ public static class ClothingCategories
 		if ( clothing is null )
 			return false;
 
-		if ( clothing.ResourceName.Contains( "chainmail" ) )
-			return false;
-
 		return IsShirt( clothing.Parent )
 			|| IsTop( clothing )
 			&& !IsDress( clothing )
@@ -84,12 +80,6 @@ public static class ClothingCategories
 	{
 		if ( clothing is null )
 			return false;
-
-		var excluded = new[] { "armour", "cardboard", "binman" };
-		if ( excluded.Any( clothing.ResourceName.Contains ) )
-		{
-			return false;
-		}
 
 		return IsBottom( clothing.Parent )
 			|| clothing.Category == Clothing.ClothingCategory.Bottoms;

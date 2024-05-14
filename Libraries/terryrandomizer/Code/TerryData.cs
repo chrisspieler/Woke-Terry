@@ -6,7 +6,7 @@ public class TerryData
 {
 	public BodyData Body { get; set; }
 	public OutfitData Outfit { get; set; }
-	public ClothingContainer Container => Body.Resources.Merge( Outfit.Resources, ClothingConflictResolver.RemoveSelf );
+	public ClothingContainer Container => Body.Resources.Merge( Outfit.Resources, ClothingConflictResolver.RemoveOther );
 
 	public static TerryData Generate( BodyGeneratorConfig bodyConfig = null, OutfitGeneratorConfig outfitConfig = null )
 	{
