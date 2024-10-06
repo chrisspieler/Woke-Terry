@@ -81,14 +81,14 @@
           "__type": "CameraWobble",
           "__guid": "487a884c-a8f8-4800-8180-98149e02fa2f",
           "FovRange": "70 90",
-          "OrbitDistance": 50,
-          "OrbitSwayAmount": "30,20,0",
+          "OrbitDistance": 75,
+          "OrbitSwayAmount": "10,5,0",
           "OrbitSwaySpeed": 0.5,
           "OrbitTarget": {
             "_type": "gameobject",
             "go": "09c74406-9245-4810-a98c-726f5dc06709"
           },
-          "SwayAmount": "20,20,20",
+          "SwayAmount": "5,5,5",
           "SwaySpeed": 20,
           "ZoomSpeed": 1
         }
@@ -132,6 +132,93 @@
           "__guid": "a569f178-8c01-4962-8926-f599dbbbadff",
           "BodyConfig": "data/woke_body.bodcfg",
           "CycleIntervalSeconds": 1,
+          "OnTerryGenerated": {
+            "__version": 8,
+            "__guid": "7ee9afb1-2ca9-4b29-8689-55b96e193cde",
+            "__changeId": 11,
+            "UserData": {
+              "Title": "On Terry Generated",
+              "ReferencedComponentTypes": []
+            },
+            "Variables": [],
+            "Nodes": [
+              {
+                "Id": 0,
+                "Type": "input"
+              },
+              {
+                "Id": 2,
+                "Type": "scene.ref",
+                "UserData": {
+                  "Position": "24,96"
+                }
+              },
+              {
+                "Id": 3,
+                "Type": "call",
+                "Properties": {
+                  "_isStatic": false,
+                  "_name": "GetRandomPrideFlags",
+                  "_type": "FlagEmitter"
+                },
+                "UserData": {
+                  "Position": "180,0"
+                }
+              },
+              {
+                "Id": 4,
+                "Type": "call",
+                "Properties": {
+                  "_isStatic": false,
+                  "_name": "EmitFlags",
+                  "_type": "FlagEmitter"
+                },
+                "UserData": {
+                  "Position": "480,0"
+                }
+              }
+            ],
+            "Links": [
+              {
+                "SrcId": 0,
+                "SrcName": "_signal",
+                "DstId": 3,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 2,
+                "SrcName": "_result",
+                "DstId": 3,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 3,
+                "SrcName": "_signal",
+                "DstId": 4,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 2,
+                "SrcName": "_result",
+                "DstId": 4,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 3,
+                "SrcName": "_result",
+                "DstId": 4,
+                "DstName": "flags"
+              }
+            ],
+            "Defaults": {
+              "$2.component": {
+                "_type": "component",
+                "component_id": "a9ac30fe-267f-4be4-9196-336bdcf620ef",
+                "go": "4df91bd4-197b-4e86-bdfc-456e69511fbb",
+                "component_type": "FlagEmitter"
+              }
+            }
+          },
           "OutfitConfig": "data/woke_clothing.clthcfg",
           "Target": {
             "_type": "component",
@@ -148,6 +235,27 @@
           "Name": "Camera Target",
           "Position": "0,0,64",
           "Enabled": true
+        }
+      ]
+    },
+    {
+      "__guid": "4df91bd4-197b-4e86-bdfc-456e69511fbb",
+      "Flags": 0,
+      "Name": "Flag Emitter",
+      "Position": "254.9799,288,96",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "FlagEmitter",
+          "__guid": "a9ac30fe-267f-4be4-9196-336bdcf620ef",
+          "BaseHeterosexualPercent": 86,
+          "FlagTranslationPerSecond": "0,-200,0",
+          "NonBinaryPercent": 2,
+          "NonBinaryQueernessMultiplier": 2,
+          "SequenceElementOffset": "0,0,-64",
+          "TransPercent": 1,
+          "TransPrideFlag": "data/flags/transgender.pflag",
+          "TransQueernessMultiplier": 5
         }
       ]
     },
@@ -268,13 +376,13 @@
             "prefab": "prefabs/pronoun.prefab"
           },
           "PronounSets": [
-            "data/binary.pnouns",
-            "data/singular_they.pnouns",
-            "data/it.pnouns",
-            "data/relative.pnouns",
-            "data/indefinite.pnouns",
-            "data/plural.pnouns",
-            "data/neopronouns_popular.pnouns"
+            "data/pronouns/singular_they.pnouns",
+            "data/pronouns/binary.pnouns",
+            "data/pronouns/indefinite.pnouns",
+            "data/pronouns/it.pnouns",
+            "data/pronouns/neopronouns_popular.pnouns",
+            "data/pronouns/plural.pnouns",
+            "data/pronouns/relative.pnouns"
           ],
           "PronounsPerSecond": 10
         }

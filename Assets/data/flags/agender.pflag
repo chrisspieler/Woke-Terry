@@ -1,0 +1,11 @@
+{
+  "Name": "Agender Pride Flag",
+  "FlagModel": "models/agender_flag.vmdl",
+  "Category": "GenderIdentity",
+  "RelativePercentChance": 2,
+  "__references": [
+    "willow.agenderflag#9612"
+  ],
+  "IsValid": true,
+  "__version": 0
+}

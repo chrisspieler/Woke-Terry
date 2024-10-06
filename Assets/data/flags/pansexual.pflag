@@ -1,0 +1,11 @@
+{
+  "Name": "Pansexual Pride Flag",
+  "FlagModel": "models/pansexual_flag.vmdl",
+  "Category": "SexualOrientation",
+  "RelativePercentChance": 3,
+  "__references": [
+    "willow.pansexualflag#9604"
+  ],
+  "IsValid": true,
+  "__version": 0
+}

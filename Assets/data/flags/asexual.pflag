@@ -1,0 +1,9 @@
+{
+  "Name": "Asexual Pride Flag",
+  "FlagModel": "models/asexual_flag.vmdl",
+  "Category": "SexualOrientation",
+  "RelativePercentChance": 2,
+  "__references": [],
+  "IsValid": true,
+  "__version": 0
+}

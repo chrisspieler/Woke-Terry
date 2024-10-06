@@ -1,0 +1,11 @@
+{
+  "Name": "Transgender Pride Flag",
+  "FlagModel": "models/transgender_flag.vmdl",
+  "Category": "Trans",
+  "RelativePercentChance": 1,
+  "__references": [
+    "willow.transgenderflag#9601"
+  ],
+  "IsValid": true,
+  "__version": 0
+}

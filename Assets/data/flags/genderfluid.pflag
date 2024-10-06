@@ -1,0 +1,11 @@
+{
+  "Name": "Genderfluid Pride Flag",
+  "FlagModel": "models/genderfluid_flag.vmdl",
+  "Category": "GenderIdentity",
+  "RelativePercentChance": 2,
+  "__references": [
+    "willow.genderfluidflag#9607"
+  ],
+  "IsValid": true,
+  "__version": 0
+}

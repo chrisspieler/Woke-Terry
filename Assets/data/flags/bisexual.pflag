@@ -1,0 +1,9 @@
+{
+  "Name": "Bisexual Pride Flag",
+  "FlagModel": "models/bisexual_flag.vmdl",
+  "Category": "SexualOrientation",
+  "RelativePercentChance": 3,
+  "__references": [],
+  "IsValid": true,
+  "__version": 0
+}

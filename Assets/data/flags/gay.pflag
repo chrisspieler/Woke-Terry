@@ -1,0 +1,11 @@
+{
+  "Name": "Gay Pride Flag",
+  "FlagModel": "models/gay_flag.vmdl",
+  "Category": "SexualOrientation",
+  "RelativePercentChance": 3,
+  "__references": [
+    "willow.gayflag#9608"
+  ],
+  "IsValid": true,
+  "__version": 0
+}

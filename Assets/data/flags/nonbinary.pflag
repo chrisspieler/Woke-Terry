@@ -1,0 +1,9 @@
+{
+  "Name": "Nonbinary Pride Flag",
+  "FlagModel": "models/nonbinary_flag.vmdl",
+  "Category": "GenderIdentity",
+  "RelativePercentChance": 3,
+  "__references": [],
+  "IsValid": true,
+  "__version": 0
+}

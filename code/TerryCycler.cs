@@ -1,7 +1,9 @@
 using Duccsoft.Terry;
+using System;
 
 public sealed class TerryCycler : Component
 {
+	[Property] public Action OnTerryGenerated { get; set; }
 	[Property, Range(0.1f, 1f, 0.1f)] public float CycleIntervalSeconds { get; set; } = 1f;
 	[Property] public SkinnedModelRenderer Target { get; set; }
 	[Property] public BodyGeneratorConfig BodyConfig { get; set; }
@@ -39,5 +41,6 @@ public sealed class TerryCycler : Component
 		var clothing = data.Container;
 		clothing.Apply( Target );
 		Target.DyeHair( clothing, data.Body.HairColor );
+		OnTerryGenerated?.Invoke();
 	}
 }
