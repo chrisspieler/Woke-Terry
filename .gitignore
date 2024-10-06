@@ -26,3 +26,6 @@ code/Editor/.vscode/*
 *.vpk
 
 .sbox/*
+Libraries/terryrandomizer/Code/obj/*
+Libraries/terryrandomizer/UnitTests/obj/*
+Libraries/terryrandomizer/Editor/obj/*
