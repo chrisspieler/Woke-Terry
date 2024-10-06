@@ -273,7 +273,8 @@
             "data/it.pnouns",
             "data/relative.pnouns",
             "data/indefinite.pnouns",
-            "data/plural.pnouns"
+            "data/plural.pnouns",
+            "data/neopronouns_popular.pnouns"
           ],
           "PronounsPerSecond": 10
         }

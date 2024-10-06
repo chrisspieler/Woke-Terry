@@ -1,0 +1,19 @@
+{
+  "Name": "Popular Neopronouns",
+  "Pronouns": [
+    "ae",
+    "aer",
+    "ey",
+    "em",
+    "fae",
+    "faer",
+    "xe",
+    "xem",
+    "ze",
+    "hir",
+    "zir"
+  ],
+  "__references": [],
+  "IsValid": true,
+  "__version": 0
+}
