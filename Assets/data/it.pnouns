@@ -1,0 +1,11 @@
+{
+  "Name": "It",
+  "Pronouns": [
+    "it",
+    "its",
+    "itself"
+  ],
+  "__references": [],
+  "IsValid": true,
+  "__version": 0
+}

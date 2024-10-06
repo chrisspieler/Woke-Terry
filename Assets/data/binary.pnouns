@@ -1,0 +1,16 @@
+{
+  "Name": "Binary",
+  "Pronouns": [
+    "he",
+    "him",
+    "himself",
+    "his",
+    "she",
+    "her",
+    "herself",
+    "hers"
+  ],
+  "__references": [],
+  "IsValid": true,
+  "__version": 0
+}

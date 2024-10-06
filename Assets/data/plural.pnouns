@@ -1,0 +1,18 @@
+{
+  "Name": "Plural",
+  "Pronouns": [
+    "we",
+    "us",
+    "our",
+    "ours",
+    "you",
+    "your",
+    "yours",
+    "ourselves",
+    "yourselves",
+    "theirselves"
+  ],
+  "__references": [],
+  "IsValid": true,
+  "__version": 0
+}

@@ -1,0 +1,18 @@
+{
+  "Name": "Relative",
+  "Pronouns": [
+    "who",
+    "whom",
+    "whomst",
+    "whomst\u0027d\u0027ve",
+    "whose",
+    "which",
+    "that",
+    "whoever",
+    "whichever",
+    "whomever"
+  ],
+  "__references": [],
+  "IsValid": true,
+  "__version": 0
+}

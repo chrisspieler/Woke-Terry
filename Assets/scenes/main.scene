@@ -8,8 +8,6 @@
       "Position": "-83.0332,-1.551621,65.48743",
       "Rotation": "-0.0005806512,0.03838357,0.01511472,0.9991486",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.CameraComponent",
@@ -82,7 +80,7 @@
         {
           "__type": "CameraWobble",
           "__guid": "487a884c-a8f8-4800-8180-98149e02fa2f",
-          "FovRange": "70.00,90.00,1",
+          "FovRange": "70 90",
           "OrbitDistance": 50,
           "OrbitSwayAmount": "30,20,0",
           "OrbitSwaySpeed": 0.5,
@@ -103,8 +101,6 @@
       "Position": "78.40492,0.000006854377,0",
       "Rotation": "0,0,1,-0.00000004371139",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.SkinnedModelRenderer",
@@ -113,8 +109,23 @@
           "CreateBoneObjects": false,
           "MaterialGroup": "default",
           "Model": "models/citizen/citizen.vmdl",
+          "Morphs": {},
+          "Parameters": {
+            "bools": {},
+            "ints": {},
+            "floats": {},
+            "vectors": {},
+            "rotations": {}
+          },
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
           "RenderType": "On",
-          "Tint": "1,1,1,1"
+          "Tint": "1,1,1,1",
+          "UseAnimGraph": true
         },
         {
           "__type": "TerryCycler",
@@ -136,9 +147,7 @@
           "Flags": 0,
           "Name": "Camera Target",
           "Position": "0,0,64",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true
+          "Enabled": true
         }
       ]
     },
@@ -147,8 +156,6 @@
       "Flags": 0,
       "Name": "Volumetric Fog",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.VolumetricFogVolume",
@@ -168,8 +175,6 @@
       "Name": "2D Skybox",
       "Tags": "skybox",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.SkyBox2D",
@@ -191,8 +196,6 @@
       "Position": "45.34208,-1.916644,86.72118",
       "Tags": "light_point,light",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.PointLight",
@@ -213,8 +216,6 @@
       "Position": "52.97065,-17.9782,60.13955",
       "Tags": "light_point,light",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.PointLight",
@@ -235,8 +236,6 @@
       "Position": "70.1982,15.25179,57.72091",
       "Tags": "light_point,light",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.PointLight",
@@ -256,8 +255,6 @@
       "Name": "Pronouns",
       "Position": "287.9223,-18.6924,38.62001",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "PronounEmitter",
@@ -270,6 +267,14 @@
             "_type": "gameobject",
             "prefab": "prefabs/pronoun.prefab"
           },
+          "PronounSets": [
+            "data/binary.pnouns",
+            "data/singular_they.pnouns",
+            "data/it.pnouns",
+            "data/relative.pnouns",
+            "data/indefinite.pnouns",
+            "data/plural.pnouns"
+          ],
           "PronounsPerSecond": 10
         }
       ]
@@ -280,9 +285,8 @@
       "Name": "Smoke",
       "Position": "295.193,20.50562,-46.13969",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "__Prefab": "prefabs/smoke.prefab"
+      "__Prefab": "prefabs/smoke.prefab",
+      "__PrefabVariables": {}
     },
     {
       "__guid": "c095ffbc-55df-45a1-8b85-0370df3acdf0",
@@ -290,9 +294,8 @@
       "Name": "Smoke (1)",
       "Position": "295.193,545.8348,-46.13969",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "__Prefab": "prefabs/smoke.prefab"
+      "__Prefab": "prefabs/smoke.prefab",
+      "__PrefabVariables": {}
     },
     {
       "__guid": "e84c37d9-b7a5-481c-85c2-cbf00a2219a0",
@@ -300,9 +303,8 @@
       "Name": "Smoke (2)",
       "Position": "295.193,-535.332,-46.13969",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "__Prefab": "prefabs/smoke.prefab"
+      "__Prefab": "prefabs/smoke.prefab",
+      "__PrefabVariables": {}
     }
   ],
   "SceneProperties": {
@@ -310,6 +312,7 @@
     "MaxFixedUpdates": 5,
     "NetworkFrequency": 30,
     "NetworkInterpolation": true,
+    "PhysicsSubSteps": 1,
     "ThreadedAnimation": true,
     "TimeScale": 1,
     "UseFixedUpdate": true,
@@ -328,10 +331,10 @@
   },
   "Title": "main",
   "Description": "",
-  "LastSaved": "2024-05-14T14:22:42.0918961-06:00",
   "ResourceVersion": 1,
-  "__version": 1,
   "__references": [
     "dopamine.starmap#27121"
-  ]
+  ],
+  "IsValid": true,
+  "__version": 1
 }

@@ -1,0 +1,12 @@
+{
+  "Name": "Singular They",
+  "Pronouns": [
+    "they",
+    "them",
+    "themself",
+    "theirs"
+  ],
+  "__references": [],
+  "IsValid": true,
+  "__version": 0
+}

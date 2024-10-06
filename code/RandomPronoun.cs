@@ -5,6 +5,7 @@ public sealed class RandomPronoun : Component
 	[Property] public Curve SpeedFactor { get; set; }
 	[Property] public float Lifetime { get; set; } = 1f;
 	[Property] public Vector3 TranslationPerSecond { get; set; }
+	[Property] public List<PronounSet> PronounSets { get; set; } = new();
 
 	private TimeSince _sincePronounCreated;
 
@@ -29,15 +30,9 @@ public sealed class RandomPronoun : Component
 	{
 		"I",
 		"you",
-		"he",
-		"her",
-		"they",
 		"it",
 		"my",
 		"your",
-		"his",
-		"hers",
-		"theirs",
 		"its",
 		"this",
 		"that",
@@ -53,20 +48,17 @@ public sealed class RandomPronoun : Component
 		"every",
 		"myself",
 		"yourself",
-		"himself",
-		"herself",
-		"themself",
 		"itself",
 		"some",
 		"anybody",
 		"anything",
 		"none",
 		"ourselves",
-		"themselves"
 	};
 
-	public static string GetRandomPronoun()
+	public string GetRandomPronoun()
 	{
-		return Game.Random.FromList( _randomPronouns );
+		List<string> pronouns = PronounSets.SelectMany( p => p.Pronouns ).ToList();
+		return Game.Random.FromList( pronouns );
 	}
 }

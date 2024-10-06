@@ -1,0 +1,26 @@
+{
+  "Name": "Indefinite",
+  "Pronouns": [
+    "all",
+    "another",
+    "any",
+    "anybody",
+    "anything",
+    "each",
+    "everybody",
+    "everyone",
+    "everything",
+    "few",
+    "many",
+    "nobody",
+    "none",
+    "one",
+    "several",
+    "some",
+    "somebody",
+    "someone"
+  ],
+  "__references": [],
+  "IsValid": true,
+  "__version": 0
+}
